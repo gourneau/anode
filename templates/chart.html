@@ -1,0 +1,55 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>chart</title>
+ 
+
+  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.1.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+
+
+<script>
+$(function () {
+
+        var xhr = $.ajax({
+                url : "http://10.25.3.190:31415/(__updated__:'GreaterThan(\"2013-03-19T30:00:00.747838 00:00\")',t_done:'GreaterThan(100)')?jsonp=unpack",
+                contentType : "application/json",
+                dataType : "jsonp",
+                jsonpCallback : "unpack"
+                
+        });
+
+        xhr.done(function(data){
+                chart(data);
+        });
+
+        function chart(data){
+                Morris.Area({
+                  element: 'chart',
+                  data: data,
+                  xkey: '__updated__',
+                  ykeys: ['t_done'],
+                  labels: ['Time to load']
+                });
+        }
+
+});
+
+</script>
+   
+</head>
+
+
+<body>
+
+
+        <div id="chart" style="height: 250px;"></div>
+        
+</body>
+</html>
