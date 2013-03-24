@@ -28,3 +28,5 @@ The `beacon_url` needs to be the address of the Flask server
     BOOMR.plugins.RT.startTimer( tplPrefix + 'head');
   </script>
 ```
+
+This is GPL code
