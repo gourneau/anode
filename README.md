@@ -29,4 +29,4 @@ The `beacon_url` needs to be the address of the Flask server
   </script>
 ```
 
-This is GPL code
+This is GPL code, this is also not ready for other people to use it.
