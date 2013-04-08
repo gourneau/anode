@@ -1,7 +1,9 @@
 anode
 =====
 
-A Python flask boomerang beacon endpoint with graphs!
+A Python flask [boomerang](https://github.com/yahoo/boomerang) beacon endpoint with graphs!
+
+These graphs will show you the total ammount of time that users had to wait for your page to load.
 
 ![anode](https://f.cloud.github.com/assets/30399/294818/77216166-9418-11e2-9618-3c3d35de59bd.png)
 
