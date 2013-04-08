@@ -9,6 +9,8 @@ These graphs will show you the total ammount of time that users had to wait for 
 
 Make sure to install the requirements from requirements.txt
 
+[JSONStore](http://code.dealmeida.net/jsonstore) is used to presist that data. [NVD3](http://nvd3.org) is used for the JavaScript Graphs.
+
 Then you need to make sure that all the pages you want to phone home have this JavaScript
 
 The `beacon_url` needs to be the address of the Flask server
