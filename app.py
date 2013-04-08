@@ -11,8 +11,8 @@ em = EntryManager('index.db')
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
+@app.route("/beacon")
+def beacon():
     r = request.values.to_dict()
     #jstime = datetime.datetime.fromtimestamp(int(r["rt.end"])/1000).isoformat()
     #r.update({"jstime": jstime})
